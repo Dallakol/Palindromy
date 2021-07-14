@@ -4,7 +4,7 @@ def czyPalindrom(x):
     for i in range(n-1):
         if x[i] != x[n-1-i]: #jezeli znak po przeciwnej stronie (w tej samej kolejnosci od konca) nie bedzie taki sam
             return False #zwroc false
-    return True; #jezeli nie napotkano problemow, zwroc true
+    return True; #jezeli nie napotkano problemow, zwrot true
 print("Podaj słowo")
 s1 = input() #pobieramy slowo
 print("Podane słowo " + ("jest " if(czyPalindrom(s1)) else "nie jest ") + "palindromem")
